@@ -1,8 +1,17 @@
+
 <script>
 	import { page } from '$app/stores';
 
 	import { base } from '$app/paths';
-</script>
+	let title = "Heyy, I am Alex!";
+  </script>
+  
+  <header>
+    <section class="header">
+      <h1>{title}</h1>
+    </section>
+  </header>
+
 
 <header>
 	
@@ -15,6 +24,9 @@
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="{base}/about">About</a>
 			</li>
+			<li aria-current={$page.url.pathname === '/bio' ? 'page' : undefined}>
+				<a href="{base}/bio">Bio</a>
+			</li>
 		</ul>
 	
 	</nav>
@@ -22,12 +34,16 @@
 	</header>
 
 <style>
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
 
-	
+    .header {
+      color: #4e3824;
+      background-color: rgb(244, 191, 127);
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
 	nav {
 		display: flex;
@@ -35,7 +51,8 @@
 		--background: rgba(255, 255, 255, 0.7);
 	}
 
-		ul {
+	
+	ul {
 		position: relative;
 		padding: 0;
 		margin: 0;
@@ -82,4 +99,5 @@
 	a:hover {
 		color: var(--color-theme-1);
 	}
+
 </style>
