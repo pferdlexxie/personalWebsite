@@ -46,25 +46,28 @@
   
   <style>
 	.header {
-    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 15px;
     font-size: 20px;
   text-align: center;
+
 }
 
-/* .header span {
-	padding: 10px;
+.header span {
+	padding: 15px;
   display: inline-block;
   background-color: rgb(244, 191, 127);
   color: #4e3824;
-} */
+  border-radius: 7px;
+}
 
     
     .portfolio {
       color: #4e3824;
       background-color: rgb(244, 191, 127);
-      padding: 10px;
-      margin-bottom: 20px;
-      margin-top: 20px;
+      /* padding: 10px; */
+      /* margin-bottom: 20px; */
+      /* margin-top: 10px;  */
       display: flex;
       justify-content: center;
       align-items: center; 
@@ -92,12 +95,12 @@
 
 
  
-  /* .image-container {
+  .image-container {
   position: relative;
   display: inline-block;
 
 
-} */
+}
 
 
 .text-overlay {

@@ -18,17 +18,23 @@
 	<nav>
 	
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<li aria-current={($page.url.pathname === '/' || $page.url.pathname.startsWith('/home')) ? 'page' : undefined}>
 				<a href="{base}/">Home</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="{base}/about">About</a>
-			</li>
+		</ul>
+		<ul>
 			<li aria-current={$page.url.pathname === '/bio' ? 'page' : undefined}>
 				<a href="{base}/bio">Bio</a>
 			</li>
+		</ul>
+		<ul>
 			<li aria-current={$page.url.pathname === '/portfolio' ? 'page' : undefined}>
 				<a href="{base}/portfolio">Portfolio</a>
+			</li>
+
+		
+			<li aria-current={$page.url.pathname === '/comic' ? 'page' : undefined}>
+				<a href="{base}/comic"> API experience</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/socialIcons' ? 'page' : undefined}>
 				<a href="{base}/socialIcons"> Media Links</a>
@@ -42,13 +48,15 @@
 <style>
 
     .header {
-      color: #4e3824;
-      background-color: rgb(244, 191, 127);
-      padding: 1px;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+	color: #4e3824;
+    background-color: rgb(244, 191, 127);
+    padding: 10px;
+	margin-top:20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+	margin-left: -20px;
+	margin-right: -20px;
     }
 
 	nav {

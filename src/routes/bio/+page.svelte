@@ -1,7 +1,7 @@
 <svelte:head>
 	<title>Bio</title>
-	<meta name="description" content="Svelte demo app" />
 </svelte:head> 
+
 <script>
 	
 	import bioIMG from '$lib/images/profile_cop_(3).jpg';
@@ -58,6 +58,7 @@
 	  .container {
 		display: flex;
 		align-items: flex-start;
+		margin-top: 30px;
 	  }
   
   
