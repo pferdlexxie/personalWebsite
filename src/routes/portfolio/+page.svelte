@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Portfolio</title>
+</svelte:head> 
+
 <script>
     let projects = [
       {
@@ -23,7 +27,7 @@
   </script>
 
 <div class="header">
-	<h4>Projects I would like to do. Analogue to portfolio</h4>
+	<span>Projects I would like to do. Analogue to portfolio</span>
 </div>
   <section class="portfolio">
     <!-- <p>
@@ -42,10 +46,18 @@
   
   <style>
 	.header {
-	  color: #4e3824;
-      background-color: rgb(244, 191, 127);
-	  text-align: center;
-	}
+    padding: 20px;
+    font-size: 20px;
+  text-align: center;
+}
+
+/* .header span {
+	padding: 10px;
+  display: inline-block;
+  background-color: rgb(244, 191, 127);
+  color: #4e3824;
+} */
+
     
     .portfolio {
       color: #4e3824;
@@ -67,11 +79,7 @@
 	margin-bottom: 20px;
 	margin-left: 7px;
 	margin-right: 7px;
-	transition: filter 0.3s;
-	/* 
-   
-   
-    transition: filter 0.3s; */
+	
   }
 
 
@@ -84,12 +92,12 @@
 
 
  
-  .image-container {
+  /* .image-container {
   position: relative;
   display: inline-block;
 
 
-}
+} */
 
 
 .text-overlay {

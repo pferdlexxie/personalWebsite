@@ -30,6 +30,9 @@
 			<li aria-current={$page.url.pathname === '/portfolio' ? 'page' : undefined}>
 				<a href="{base}/portfolio">Portfolio</a>
 			</li>
+			<li aria-current={$page.url.pathname === '/socialIcons' ? 'page' : undefined}>
+				<a href="{base}/socialIcons"> Media Links</a>
+			</li>
 		</ul>
 	
 	</nav>
@@ -41,7 +44,7 @@
     .header {
       color: #4e3824;
       background-color: rgb(244, 191, 127);
-      padding: 20px;
+      padding: 1px;
       margin-bottom: 20px;
       display: flex;
       justify-content: center;

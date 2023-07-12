@@ -1,4 +1,7 @@
-
+<svelte:head>
+	<title>Bio</title>
+	<meta name="description" content="Svelte demo app" />
+</svelte:head> 
 <script>
 	
 	import bioIMG from '$lib/images/profile_cop_(3).jpg';
@@ -23,7 +26,10 @@
 	<style>
 	   .bio {
 		background-color: rgb(244, 191, 127);
-		padding: 10px;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 30px;
+		padding-top: 30px;
 		margin-top: 30px;
 		border-radius: 20px 10px 0;
 	  }
@@ -31,7 +37,8 @@
   
 	  .bio h2 {
 		font-size: 24px;
-		margin-bottom: 10px;
+		margin-top: 1px;
+		margin-bottom: 30px;
 		text-align: center;
 	  }
   
@@ -39,7 +46,8 @@
 	  .bio p {
 		font-size: 16px;
 		text-align: center;
-		line-height: 30px;
+		line-height: 20px;
+		margin-bottom: 10px;
 	  }
   
 	  .profile-photo {
