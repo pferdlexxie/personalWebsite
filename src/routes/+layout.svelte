@@ -9,17 +9,17 @@
 	<main>
 		<slot />
 	</main>
-<!-- hmhvjctkh -->
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
 </div>
 
 <style>
+	
 	.app {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		color: #4e3824;
+      background-color: #e5d0a6;
+      padding: 0 200px;
 	}
 
 	main {
@@ -30,24 +30,6 @@
 		width: 100%;
 		max-width: 64rem;
 		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+		box-sizing: border-box;		
 	}
 </style>

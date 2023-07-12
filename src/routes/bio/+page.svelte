@@ -2,7 +2,6 @@
 <script>
 	
 	import bioIMG from '$lib/images/profile_cop_(3).jpg';
-	let altText = "Profile Photo";
 	let height = 300;
 	let bioLine1 = `₊‧⁺˖⋆ 18 years old front-end learner ⋆˖⁺‧₊`
 	let bioLine2 = `₊‧⁺˖⋆ in love with folk and folk-rock music ⋆˖⁺‧₊`

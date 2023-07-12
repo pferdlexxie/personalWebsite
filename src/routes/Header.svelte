@@ -27,6 +27,9 @@
 			<li aria-current={$page.url.pathname === '/bio' ? 'page' : undefined}>
 				<a href="{base}/bio">Bio</a>
 			</li>
+			<li aria-current={$page.url.pathname === '/portfolio' ? 'page' : undefined}>
+				<a href="{base}/portfolio">Portfolio</a>
+			</li>
 		</ul>
 	
 	</nav>
@@ -48,7 +51,9 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
+		color: #4e3824;
+      --background: rgba(244, 191, 127, 0.7); 
+		/* --background: rgba(255, 255, 255, 0.7); */
 	}
 
 	
@@ -79,7 +84,7 @@
 		top: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
+		border-top: var(--size) solid rgb(194, 74, 23);
 	}
 
 	nav a {
@@ -97,7 +102,8 @@
 	}
 
 	a:hover {
-		color: var(--color-theme-1);
+		color: rgb(194, 74, 23);
+		/* color: var(--color-theme-1); */
 	}
 
 </style>
